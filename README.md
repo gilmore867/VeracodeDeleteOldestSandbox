@@ -3,7 +3,7 @@ This is a simple PowerShell script ideally used in an AzureDevOps or Jenkins Pip
 
 
 Download the DeleteOldestSandbox.ps1 file.
-Edit the DeleteOldestSandbox.ps1 file with the following requirement:
+Edit the DeleteOldestSandbox.ps1 file with the following requirements:
 1. Give the exact name of the profile application name for $appname. Example $appname = "Test"
 2. Input the exact number of sandboxes in your application profile. Example $sandboxlimit = 15
 3. The PowerShell script requires access to the Veracode Java API jar file. The script uses the name "VeracodeJavaAPI.jar" filename.
