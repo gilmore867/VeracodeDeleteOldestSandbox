@@ -30,5 +30,5 @@ If ($sandboxidcount -eq $sandboxlimit)
 }
 else
 {
-	echo "Not at maximum sandbox limit, moving to the next step"
+	echo "Not at the maximum sandbox limit, moving to the next step"
 }
