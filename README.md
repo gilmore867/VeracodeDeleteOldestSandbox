@@ -2,7 +2,6 @@
 This is a simple PowerShell script ideally used in an AzureDevOps or Jenkins Pipeline for auto-deleting the oldest sandbox when the Application Profile limit has been reached.
 
 
-Instructions
 Download the DeleteOldestSandbox.ps1 file.
 Edit the DeleteOldestSandbox.ps1 file with the following requirement:
 1. Give the exact name of the profile application name for $appname. Example $appname = "Test"
