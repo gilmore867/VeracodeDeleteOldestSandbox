@@ -26,10 +26,10 @@ echo $sandboxidcount
 If ($sandboxidcount -eq $sandboxlimit)
 {
 	
-	echo "Sandbox Limit has been reached, deleting oldest sandbox ID $oldestsandboxid"
+	echo "The sandbox limit has been reached, deleting the oldest sandbox ID $oldestsandboxid"
 	java -jar VeracodeJavaAPI.jar -vid $env:vid -vkey $env:vkey -action deletesandbox -sandboxid $oldestsandboxid
 }
 else
 {
-	echo "Not at sandbox limit moving to the next step"
+	echo "Not at maximum sandbox limit, moving to the next step"
 }
