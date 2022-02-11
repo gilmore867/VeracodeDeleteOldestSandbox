@@ -7,10 +7,10 @@
 	 Filename:     	DeleteOldestSandbox.ps1
 	===========================================================================
 	.DESCRIPTION
-		A PowerShell script for automatically deleting the oldest sandbox when you reach the maximum sandbox limit.
+	A PowerShell script for automatically deleting the oldest sandbox when you reach the maximum sandbox limit.
         $appname = "test" - Enter your Veracode Application Name
-		$sandboxlimit = 15 - Enter the maximum number of sandboxes for the application profile.
-		Veracode Java Wrapper Download - https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/
+	$sandboxlimit = 15 - Enter the maximum number of sandboxes for the application profile.
+	Veracode Java wrapper download location - https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/
 #>
 $appname = "test"
 $sandboxlimit = 15
