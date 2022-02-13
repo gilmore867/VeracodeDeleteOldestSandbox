@@ -11,6 +11,11 @@
 	$sandboxlimit = 15 - Enter the maximum number of sandboxes for the application profile.
 	Veracode Java wrapper download location - https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/
 #>
+echo "Downloading the latest version of the Veracode Java API"
+$versionstring = curl https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/maven-metadata.xml | findstr /r "latest";
+$version  = $versionstring.Trim() -replace '<latest>','' -replace '</latest>','';
+curl https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/$version/vosp-api-wrappers-java-$version-dist.zip -o dist.zip
+7z e dist.zip -y
 $appname = "test"
 $sandboxlimit = 15
 echo "Pulling the Application ID List"
