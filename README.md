@@ -1,5 +1,5 @@
 # VeracodeDeleteOldestSandbox
-This is a simple PowerShell script ideally used in an AzureDevOps or Jenkins Pipeline for auto-deleting the oldest sandbox your Application Profile when the sandbox limit has been reached.
+This is a simple PowerShell script ideally used in an AzureDevOps or Jenkins Pipeline for auto-deleting the oldest sandbox when sandbox limit has been reached.
 
 
 Download the DeleteOldestSandbox.ps1 file.
